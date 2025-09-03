@@ -674,27 +674,6 @@ body {
   margin-right: 9px;
 }
 
-.form-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.form-input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 2px solid var(--border-primary);
-  border-radius: 8px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  background-color: var(--bg-tertiary);
-  color: var(--text-primary);
-}
-
 .form-input:focus {
   outline: none;
   border-color: var(--accent-primary);
@@ -1635,10 +1614,6 @@ html {
   font-size: 16px;
 }
 
-.file-input {
-  display: none;
-}
-
 .action-btn-addpost {
   background: none;
   border: none;
@@ -2525,21 +2500,6 @@ html {
   background: var(--bg-tertiary);
 }
 
-.friend-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.friend-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
 .friend-info {
   display: flex;
   align-items: center;
@@ -2559,52 +2519,11 @@ html {
   font-weight: 500;
 }
 
-.custom-checkbox {
-  position: relative;
-  cursor: pointer;
-}
-
 .custom-checkbox input {
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
-}
-
-.checkmark {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  background-color: var(--bg-hover);
-  border: 2px solid var(--border-secondary);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.custom-checkbox:hover .checkmark {
-  border-color: var(--accent-primary);
-}
-
-.custom-checkbox input:checked ~ .checkmark {
-  background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.custom-checkbox input:checked ~ .checkmark:after {
-  display: block;
 }
 
 .no-friends {
@@ -2802,6 +2721,10 @@ html {
   justify-content: center;
 }
 
+.custom-checkbox:hover .checkmark {
+  border-color: var(--accent-primary);
+}
+
 .friend-item:hover .checkmark {
   border-color: var(--accent-primary);
   background-color: var(--bg-hover);
@@ -2821,6 +2744,8 @@ html {
   content: "";
   position: absolute;
   display: none;
+  left: 6px;
+  top: 2px;
   width: 6px;
   height: 10px;
   border: solid white;
@@ -4156,6 +4081,8 @@ html {
   font-weight: 600;
   color: var(--text-primary);
   font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .form-label svg {
