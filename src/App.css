@@ -723,6 +723,7 @@ body {
   border: 3px solid var(--border-primary);
   border-top: 3px solid var(--accent-primary);
   border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 .error {
@@ -1234,8 +1235,8 @@ html {
 
 .view-more-btn:hover {
   background: var(--bg-hover);
-  border-color: var(--accent-secondary);
-  color: var(--accent-secondary);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 .view-more-btn svg {
@@ -2032,6 +2033,15 @@ html {
   width: 16px;
   height: 16px;
   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .search-results {
