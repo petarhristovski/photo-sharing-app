@@ -4016,6 +4016,10 @@ html {
   .posts-header {
     padding-left: 2rem;
   }
+
+  .profile-post-caption {
+    padding-left: 1rem;
+  }
 }
 
 .profile-setup-layout {
