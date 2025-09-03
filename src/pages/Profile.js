@@ -392,7 +392,9 @@ function Profile() {
                     className="view-more-friends-btn"
                     onClick={() => setShowAllFriends(!showAllFriends)}
                   >
-                    View All {friendsProfiles.length} Friends
+                    {showAllFriends
+                      ? `View Less`
+                      : `View All ${friendsProfiles.length} Friends`}
                   </button>
                 )}
               </div>
